@@ -58,14 +58,17 @@ Future<List<String>> showTextInputDialog({
 // TODO(mono): Add more options
 @immutable
 class DialogTextField {
+
   const DialogTextField({
     this.initialText,
     this.hintText,
     this.obscureText = false,
     this.validator,
+		this.keyboardType
   });
   final String initialText;
   final String hintText;
   final bool obscureText;
   final FormFieldValidator<String> validator;
+	final TextInputType keyboardType;
 }
