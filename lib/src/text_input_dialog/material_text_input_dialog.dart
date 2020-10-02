@@ -98,6 +98,7 @@ class _MaterialTextInputDialogState extends State<MaterialTextInputDialog> {
                 decoration: InputDecoration(
                   hintText: textField.hintText,
                 ),
+								keyboardType: textField.keyboardType,
                 validator: textField.validator,
                 autovalidateMode: _autovalidateMode,
               );
