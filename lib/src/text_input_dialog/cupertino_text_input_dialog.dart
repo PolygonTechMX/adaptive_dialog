@@ -123,6 +123,7 @@ class _CupertinoTextInputDialogState extends State<CupertinoTextInputDialog> {
                 autofocus: i == 0,
                 placeholder: field.hintText,
                 obscureText: field.obscureText,
+								keyboardType: field.keyboardType,
                 decoration: _borderDecoration(
                   isTopRounded: i == 0,
                   isBottomRounded: i == _textControllers.length - 1,
